@@ -1,12 +1,24 @@
 public class Person {
     String name;
-    int age;
+    private int age;
 
-    public void speak(){
-        System.out.println("I'm a person");
+    public Person() {
+
     }
 
-    public void eat(){
-        System.out.println("I'm eating");
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
