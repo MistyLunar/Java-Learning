@@ -1,4 +1,4 @@
-package Person;
+package Person.Person;
 
 public class Person {
     private String name;

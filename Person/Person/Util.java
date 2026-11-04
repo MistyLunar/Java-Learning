@@ -1,4 +1,4 @@
-package Person;
+package Person.Person;
 
 public class Util {
     public static int MALE = 1;
