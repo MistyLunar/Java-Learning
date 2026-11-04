@@ -3,6 +3,11 @@ package TestHeritage;
 public class Student extends Person{
     private String school;
 
+    public Student() {
+        super();
+        System.out.println("Student Constructor");
+    }
+
     public String getSchool() {
         return school;
     }
