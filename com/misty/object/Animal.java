@@ -24,4 +24,15 @@ public class Animal {
     public String toString() {
         return "name: " + name + " age: " + age;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Animal){
+            Animal a = (Animal) obj;
+            if (this.getName().equals(a.getName()) && this.getAge() == a.getAge()){
+                return true;
+            }
+        }
+        return false;
+    }
 }
