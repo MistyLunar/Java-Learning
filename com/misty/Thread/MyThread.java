@@ -5,7 +5,7 @@ public class MyThread extends Thread{
     public void run() {
         for (int i = 0; i <= 20; i++) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
