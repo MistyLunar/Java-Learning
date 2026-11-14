@@ -5,11 +5,18 @@ public class TicketWindow1 implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i < 20; i++) {
-            synchronized (this) {
+         /*   synchronized (this) {
                 if (ticketNo <= 10) {
                     System.out.println(Thread.currentThread().getName() + "已售卖编号为" + (ticketNo++) + "的票");
                 }
-            }
+            }*/
+            buyTicket();
+        }
+    }
+
+    public synchronized void buyTicket() {
+        if (ticketNo <= 10) {
+            System.out.println(Thread.currentThread().getName() + "已售卖编号为" + (ticketNo++) + "的票");
         }
     }
 }
